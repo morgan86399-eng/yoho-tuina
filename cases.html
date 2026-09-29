@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>改善案例 - 悠活推拿工作室</title>
+    <meta property="og:site_name" content="悠活推拿工作室" />
+    <meta property="og:title" content="改善案例 - 悠活推拿工作室" />
+    <meta property="og:description" content="案例分享：以下都是Line截圖（為保護客人隱私，關鍵部分馬賽克，謝謝觀賞）" />
+    <meta property="og:image" content="images/logo.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Maven+Pro:wght@400;500;700&family=Montserrat:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link id="wsite-base-style" rel="stylesheet" type="text/css" href="files/sites.css" />
+    <link rel="stylesheet" type="text/css" href="files/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="files/main_style.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <style type="text/css">
+        body, html {
+            background: #ffffff !important;
+            font-family: "Noto Sans TC", "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #222222;
+        }
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, 
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, 
+        #wsite-content div.paragraph, 
+        #wsite-content p {
+            font-family: "Noto Sans TC", "Playfair Display", serif !important;
+        }
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, 
+        #wsite-content h2,
+        .wsite-content-title {
+            font-family: "Montserrat", "Noto Sans TC", sans-serif !important;
+            font-weight: 700 !important;
+            letter-spacing: 5px !important;
+        }
+        .wsite-menu-default a {
+            font-family: "Actor", "Noto Sans TC", sans-serif !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+        }
+        #nav ul li#active a, #navmobile ul li#active a {
+            color: #b3b3b3 !important;
+        }
+        #nav ul li a:hover, #navmobile ul li a:hover {
+            color: #b3b3b3 !important;
+        }
+        @media screen and (min-width: 767px) {
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, 
+            #wsite-content h2,
+            .wsite-content-title {
+                font-size: 80px !important;
+                line-height: 1.15 !important;
+            }
+        }
+
+        /* Navigation Logo */
+        #navigation .sitename img {
+            max-width: 140px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        #mobile-top .sitename img {
+            max-height: 44px;
+            width: auto;
+        }
+
+        /* Hero and Section Backgrounds */
+        .hero-section-box {
+            min-height: 720px;
+            background-image: url("images/hero-bg.png") !important;
+            background-repeat: no-repeat !important;
+            background-position: 50% 50% !important;
+            background-size: cover !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            padding: 40px 20px 60px 20px !important;
+        }
+        .about-section-box {
+            background-image: url("images/about-bg.jpg") !important;
+            background-repeat: no-repeat !important;
+            background-position: 50% 50% !important;
+            background-size: cover !important;
+            padding: 50px 20px !important;
+            min-height: 650px;
+        }
+        .cases-section-box {
+            padding: 40px 20px !important;
+            background: #ffffff;
+        }
+
+        /* Clean Modern Footer */
+        .site-footer-bar {
+            padding: 24px 20px;
+            text-align: center;
+            color: #888888;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-family: "Montserrat", sans-serif;
+            border-top: 1px solid #eeeeee;
+            background: #ffffff;
+        }
+
+        /* Lightbox modal */
+        #lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.88);
+            z-index: 9999999;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+        }
+        #lightbox-overlay.active {
+            display: flex;
+        }
+        #lightbox-overlay img {
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 6px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            object-fit: contain;
+            cursor: default;
+        }
+        #lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 10000000;
+            transition: transform 0.2s;
+        }
+        #lightbox-close:hover {
+            transform: scale(1.15);
+        }
+
+        .clickable-img {
+            cursor: zoom-in;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        .clickable-img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+    </style>
+</head>
+<body class="no-header-page wsite-page-25913218922669620363 wsite-theme-light">
+<div id="wrapper">
+    
+    <div id="navigation">
+        <div id="navigation-wrap">
+            <div id="nav">
+                <div class="sitename">
+                    <span class="wsite-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="悠活推拿工作室" />
+                        </a>
+                    </span>
+                </div>
+                <ul class="wsite-menu-default">
+                    <li class="wsite-menu-item-wrap">
+                        <a href="index.html" class="wsite-menu-item">預約時間</a>
+                    </li>
+                    <li class="wsite-menu-item-wrap">
+                        <a href="about.html" class="wsite-menu-item">關於我們</a>
+                    </li>
+                    <li id="active" class="wsite-menu-item-wrap">
+                        <a href="cases.html" class="wsite-menu-item">改善案例</a>
+                    </li>
+                    <li class="wsite-menu-item-wrap">
+                        <a href="services.html" class="wsite-menu-item">服務項目</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="navmobile">
+                <ul class="wsite-menu-default">
+                    <li class="wsite-menu-item-wrap">
+                        <a href="index.html" class="wsite-menu-item">預約時間</a>
+                    </li>
+                    <li class="wsite-menu-item-wrap">
+                        <a href="about.html" class="wsite-menu-item">關於我們</a>
+                    </li>
+                    <li id="active" class="wsite-menu-item-wrap">
+                        <a href="cases.html" class="wsite-menu-item">改善案例</a>
+                    </li>
+                    <li class="wsite-menu-item-wrap">
+                        <a href="services.html" class="wsite-menu-item">服務項目</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <label id="mobile-close" class="hamburger" for="mobile-input"></label>
+    </div>
+    
+    <div id="main">
+        
+    <div id="mobile-top">
+        <label id="mobile-open" class="hamburger" for="mobile-input"></label>
+        <div class="sitename">
+            <span class="wsite-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="悠活推拿工作室" />
+                </a>
+            </span>
+        </div>
+    </div>
+    
+        <div id="content-wrapper">
+            <div id="wsite-content" class="wsite-elements wsite-not-footer">
+                <div class="wsite-section-wrap">
+                    <div class="wsite-section wsite-body-section cases-section-box">
+                        <div class="wsite-section-content">
+                            <div class="container">
+                                <div class="wsite-section-elements">
+                                    <h2 class="wsite-content-title" style="margin-bottom: 20px; font-size: 80px; letter-spacing: 5px;">案例分享</h2>
+                                    <div class="paragraph" style="font-size: 17px; margin-bottom: 35px; color: #444;">
+                                        以下都是Line截圖（為保護客人隱私，關鍵部分馬賽克，謝謝觀賞）
+                                    </div>
+                                    <div>
+                                        <div class="wsite-multicol">
+                                            <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+                                                <table class="wsite-multicol-table">
+                                                    <tbody class="wsite-multicol-tbody">
+                                                        <tr class="wsite-multicol-tr">
+                                                            <td class="wsite-multicol-col" style="width:50%; padding:0 15px; text-align: center;">
+                                                                <div class="wsite-image wsite-image-border-none" style="padding:10px 0;">
+                                                                    <a href="images/case-feedback-1.jpg" rel="lightbox">
+                                                                        <img class="clickable-img" alt="客戶反饋截圖 1" src="images/case-feedback-1.jpg" style="width:auto;max-width:100%;border-radius:6px;box-shadow:0 4px 15px rgba(0,0,0,0.15);" />
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                            <td class="wsite-multicol-col" style="width:50%; padding:0 15px; text-align: center;">
+                                                                <div class="wsite-image wsite-image-border-none" style="padding:10px 0;">
+                                                                    <a href="images/case-feedback-2.jpg" rel="lightbox">
+                                                                        <img class="clickable-img" alt="客戶反饋截圖 2" src="images/case-feedback-2.jpg" style="width:auto;max-width:100%;border-radius:6px;box-shadow:0 4px 15px rgba(0,0,0,0.15);" />
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div id="footer">
+        <div class="site-footer-bar">
+            <p>&copy; 悠活推拿工作室 &bull; 預約體驗 &bull; 版權所有</p>
+        </div>
+    </div>
+    
+    </div>
+</div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-overlay" onclick="closeLightbox(event)">
+        <span id="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <img id="lightbox-img" src="" alt="Zoomed View" onclick="event.stopPropagation()" />
+    </div>
+
+    <script>
+    // Mobile navigation toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        var mobileOpen = document.getElementById('mobile-open');
+        var mobileClose = document.getElementById('mobile-close');
+        
+        if (mobileOpen) {
+            mobileOpen.addEventListener('click', function(e) {
+                e.stopPropagation();
+                document.body.classList.toggle('menu-open');
+            });
+        }
+        if (mobileClose) {
+            mobileClose.addEventListener('click', function(e) {
+                e.stopPropagation();
+                document.body.classList.remove('menu-open');
+            });
+        }
+        document.addEventListener('click', function(e) {
+            if (document.body.classList.contains('menu-open')) {
+                var nav = document.getElementById('navigation');
+                if (nav && !nav.contains(e.target) && e.target !== mobileOpen) {
+                    document.body.classList.remove('menu-open');
+                }
+            }
+        });
+    });
+
+    // Lightbox modal logic
+    function openLightbox(src) {
+        var overlay = document.getElementById('lightbox-overlay');
+        var img = document.getElementById('lightbox-img');
+        img.src = src;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+        var overlay = document.getElementById('lightbox-overlay');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeLightbox();
+        }
+    });
+
+    // Bind all lightbox images
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('a[rel="lightbox"], .clickable-img').forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                var targetSrc = el.getAttribute('href') || el.getAttribute('src');
+                if (targetSrc) {
+                    openLightbox(targetSrc);
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
+    
